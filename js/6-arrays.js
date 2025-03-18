@@ -1,0 +1,85 @@
+/* EL ARRAY ES UNA ESTRUCTURA QUE ME PERMITE MANEJAR MUCHOS DATOS, SIRVE PARA ORGANIZAR LA INFORMACION */
+// ORGANIZA DESDE LA POSICION 0 */
+/* DATOS QUE ORGANIZA EL ARRAY: STRING, NUMBER , BOOLEANOS , OBJETOS */
+const alumnos = ['Jero', 'Anto', 'Cristian', 'Mariano']
+// console.log(alumnos)
+// console.log(alumnos-length)
+
+/* METODOS QUE MODIFICAN AL ARRAY ORIGINAL*/
+/* PUSH: AGREGA UN NUEVO ELEMENTO (ESTE SE UBICA AL FINAL)*/
+// alumnos.push('Daniel')
+// console.log(alumnos)
+
+/* SPLICE: PUEDE BORRAR O AGREGAR, (SE LE INDICA LA POSICION PRIMERO Y LUEGO SE INDICA SI BORRA O
+SI SE AGREGA Y AL FINAL SE PASA EL PARAMETRO QUE SE QUIERE AGREGAR) */
+// alumnos.splice(3, 0, 'Daniel')
+// console.log(alumnos)
+
+/* UNSHIFT: AGREGA AL NUEVO ELEMENTO AL INICIO (POSICION 0) */
+// alumnos.unshift('Daniel')
+// console.log(alumnos)
+
+/* (EL NUEVO ELEMENTO SIEMPRE DEBE IR AL FINAL) */
+
+/* METODOS PARA BORRAR UN ELEMENTO */
+/* SPLICE */
+// alumnos.splice(3,1,'Daniel') /* BORRA Y REEMPLAZA */
+
+/* POP: BORRA EL ULTIMO ELEMENTO */
+// alumnos.pop()
+// console.log(alumnos)
+
+/* SHIFT: BORRA EL PRIMER ELEMENTO (POSICION 0) */
+// alumnos.shift()
+// console.log(alumnos)
+
+/* REVERSE: INVIERTE AL ARRAY */
+// alumnos.reverse()
+// console.log(alumnos)
+
+/* METODOS QUE TRABAJAN CON EL ARRAY ORIGINAL PERO RETORNAN UN ARRAY NUEVO (UNA COPIA)
+// (NO MODIFICAN AL ARRAY ORIGINAL SINO QUE AFECTA A LA COPIA)
+
+/* FILTER: BUSCA LOS ELEMENTOS QUE COINCIDAN CON LA CONDICION QUE SE BUSCA EN EL ARRAY ORIGINAL 
+Y A TODOS ESOS ELEMENTOS LOS VA GUARDANDO EN UN NUEVO ARRAY (NECESITA DE OTRA FUNCION INTERNA) */
+// PERMITE PONER UNA CONDICION Y A TRAVES DE ESA CONDICION TODO LO QUE DE TRUE LO GUARDA */
+// const alumnosFiltrados = alumnos.filter((alumno) => alumno === 'Jero')
+
+// console.log(alumnosFiltrados)
+
+/* SLICE: CORTA UNA PARTE DEL ARRAY CREANDO UNO NUEVO, NO ELIMINA NINGUN ELEMENTO DEL ORIGINAL */
+
+/* FIND: DEVUELVE UN ELEMENTO EN BASE A UN OBJETO (DEVUELVE LA PRIMERA COINCIDENCIA) */
+// const alumnosFind = alumnos.filter((alumno) => alumno === 'Jero')
+
+// console.log(alumnosFind)
+
+/* SORT: ACOMODA ALFABETICAMENTE, A LOS NUMEROS LOS ACOMODA POR EL PRIMER VALOR */
+//const numeros = [12,1,15,60,40,23,32,8]
+//console.log(numeros.sort((a,b) => a - b )) /* ACOMODA LOS NUMEROS DE MENOR A MAYOR 
+//(resta los digitos) */
+// console.log(numeros.sort((a,b) => b - a )) /* ACOMODA LOS NUMEROS DE MAYOR A MENOR */
+// console.log(alumnos.sort())
+
+/* MAP: CREA UN NUEVO ARRAY LLAMANDO A LA FUNCION PARA CADA ELEMENTO DEL ARRAY
+// PERMITE PASAR A UN MODELO, RECORRE DATO POR DATO, TOMA UN DATO Y LO ACOMODA COMO QUIERO
+// RETORNA UN ARRAY CON ESE MODELO Y FINALMENTE SE LO PASA AL HTML */
+// NO EJECUTA LA FUNCION EN ELEMENTOS VACIOS
+// NO MODIFICA AL ARRAY ORIGINAL */
+
+/* CONCAT: CREA UN NUEVO ARRAY FUSIONANDO (concatenando) LOS ARRAYS EXISTENTES
+// NO LOS MODIFICA, SINO SIEMPRE DEVUELVE UN NUEVO ARRAY
+// PUEDE TOMAR CUALQUIER NUMERO DE ARGUMENTOS DE MATRIZ
+// TAMBIEN PUEDE TOMAR CADENAS COMO ARGUMENTOS */
+
+/* COMO RECORRER UN ARRAY (siempre se recorre de a un elemento) tengo que saber cuanto de elemento
+tengo antes de que recorra el array */
+/* FOR: NECESITA DE UN CONTADOR, LA CONDICION ,  */
+// for(let i=0; i < alumnos.length; i++){
+//     const alumno = alumnos[i]
+//     document.write(`${alumnos} <b>`)
+// }
+
+/* COMO SE OBTIENE EL ULTIMO ELEMENTO DE UN ARRAY */
+console.log(alumnos[alumnos.length - 1])
+// (CANTIDAD "LENGTH" - POSICION "ARRAY")
