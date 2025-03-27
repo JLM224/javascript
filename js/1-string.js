@@ -50,7 +50,7 @@
 //H-O-L-A-M-U-N-D-O
 
 /* SPLIT: (SEPARA) CONVIERTE UN STRING EN UN ARRAY */
-const frase = prompt('ingresa una frase')
+const frase = prompt ('ingresa una frase')
 const fraseArray = frase.split('')
 console.log(fraseArray)
 

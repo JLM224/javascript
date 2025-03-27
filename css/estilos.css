@@ -1,0 +1,15 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.carousel-inner img{
+    height: 550px;
+    object-fit: cover;
+}
+
+.card img{
+    height: 40vh;
+    object-fit: cover;
+}
