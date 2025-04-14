@@ -31,5 +31,4 @@ console.log(number === Number(numberUser)) */
 
 /* TOFIXED: CORTA EL DECIMAL, LO REDONDEA PERO DEVUELVE UN STRING */
 const decimal = 10.2589633.toFixed(2)
-console.log(Number(decimal)) // (PARSEAR) */
-
+console.log(Number(decimal)) // (PARSEAR)
