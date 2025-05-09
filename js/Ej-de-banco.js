@@ -19,7 +19,6 @@ const banco = {
         if (dinero > this.saldo) {
             alert("No podes extraer mas de lo que tenes", this.saldo);
             return //Sirve para cortar la ejecucion del condicional, se usa sino se quiere usa else
-                   //
         }
     },
     informar: function () {
